@@ -24,6 +24,6 @@ while True:
 
     pantalla.fill(config.NEGRO)
 
-    pantalla.blit(config.FONDO_PANTALLA, (-1500,-490))
+    pantalla.blit(config.FONDO_PANTALLA, (-1600,-490))
 
     pygame.display.flip()
