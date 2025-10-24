@@ -6,7 +6,7 @@ import pygame.mixer as mixer
 pygame.init()
 mixer.init()
 
-mixer.music.load("sonidos\Subwoofer Lullaby.mp3")
+mixer.music.load("sonidos/Subwoofer_Lullaby.mp3")
 mixer.music.set_volume(0.3)
 mixer.music.play()
 
