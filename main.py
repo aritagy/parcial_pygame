@@ -6,16 +6,14 @@ import pygame.mixer as mixer
 pygame.init()
 mixer.init()
 
-# mixer.music.load("2do_parcial/sonidos/minero.mp3")
-# mixer.music.set_volume(0.1)
-# mixer.music.play()
+mixer.music.load("sonidos\Subwoofer Lullaby.mp3")
+mixer.music.set_volume(0.3)
+mixer.music.play()
 
 pantalla = pygame.display.set_mode(config.DIMENSION_PANTALLA)
 
 pygame.display.set_caption("Pygirls")
 pygame.display.set_icon(config.LOGO_MINECRAFT)
-
-
 
 
 while True:
