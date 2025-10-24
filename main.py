@@ -7,7 +7,7 @@ pygame.init()
 mixer.init()
 
 mixer.music.load("sonidos/Subwoofer_Lullaby.mp3")
-mixer.music.set_volume(0.1)
+mixer.music.set_volume(0.2)
 mixer.music.play()
 
 pantalla = pygame.display.set_mode(config.DIMENSION_PANTALLA)
@@ -24,6 +24,6 @@ while True:
 
     pantalla.fill(config.NEGRO)
 
-    pantalla.blit(config.FONDO_PANTALLA, (-1400,-500))
+    pantalla.blit(config.FONDO_PANTALLA, (-1500,-490))
 
     pygame.display.flip()
