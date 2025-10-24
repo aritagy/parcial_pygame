@@ -1,0 +1,2 @@
+# parcial-pygame
+grupo pygirls
