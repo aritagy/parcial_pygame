@@ -1,5 +1,4 @@
-def crear_rectangulo():
-    '''
+'''
     ### ¿Qué hace?
     ·
     ### ¿Qué recibe?
