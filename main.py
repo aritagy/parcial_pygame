@@ -7,7 +7,7 @@ pygame.init()
 mixer.init()
 
 mixer.music.load("sonidos/Subwoofer_Lullaby.mp3")
-mixer.music.set_volume(0.3)
+mixer.music.set_volume(0.1)
 mixer.music.play()
 
 pantalla = pygame.display.set_mode(config.DIMENSION_PANTALLA)
