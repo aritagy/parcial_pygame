@@ -16,7 +16,7 @@ pygame.display.set_caption("Pygirls")
 pygame.display.set_icon(config.LOGO_MINECRAFT)
 
 
-color_pantalla = [0, 0, 0]
+
 
 while True:
     for event in pygame.event.get():
@@ -24,7 +24,7 @@ while True:
             pygame.quit()
             quit()
 
-    pantalla.fill(color_pantalla)
+    pantalla.fill(config.NEGRO)
 
     pantalla.blit(config.FONDO_PANTALLA, (-1400,-500))
 
