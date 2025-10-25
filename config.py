@@ -1,6 +1,6 @@
 import pygame
 
-DIMENSION_PANTALLA = (900, 700)
+DIMENSION_PANTALLA = (800, 600)
 
 LOGO_MINECRAFT = pygame.image.load("imagenes/minecraft_logo.png")
 
