@@ -27,6 +27,12 @@ while True:
     
     pantalla.blit(config.FONDO_PANTALLA, (-1600,-490))
 
+<<<<<<< HEAD
+=======
+    pantalla.fill(config.NEGRO)
+
+    pantalla.blit(config.FONDO_PANTALLA, (-1600,-490))
+>>>>>>> e37dda0d8c28fbb459531206038408f26c526316
 
     for i in range(len(lista_rectangulos)):
         pygame.draw.rect(pantalla,lista_rectangulos[i]["color"], (lista_rectangulos[i]["posicion"], lista_rectangulos[i]["superficie"]))
