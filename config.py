@@ -1,11 +1,13 @@
 import pygame
 
-DIMENSION_PANTALLA = (1200, 800)
+DIMENSION_PANTALLA = (800, 600)
 
 LOGO_MINECRAFT = pygame.image.load("imagenes/minecraft_logo.png")
 
 FONDO_PANTALLA = pygame.image.load("imagenes/imagen_fondo.jpg")
 
-GRIS = [80, 80, 80]
+GRIS_OSCURO = [128, 128, 128]
+
+GRIS_CLARO = [192, 192, 192]
 
 NEGRO = [0, 0, 0]
