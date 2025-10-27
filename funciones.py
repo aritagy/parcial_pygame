@@ -33,8 +33,8 @@ def crear_slots(ancho: int, alto : int, pos_x : int, pos_y : int, columna : int,
 
     for i in range(fila):
         for j in range(columna):
-            x = pos_x + j * (ancho + separacion)
-            y = pos_y + i * (alto + separacion)
+            x = pos_x + i * (alto + separacion)
+            y = pos_y + j * (ancho + separacion)
 
             slot = crear_rectangulo([ancho, alto], [x, y], color)
             lista_slots.append(slot)
