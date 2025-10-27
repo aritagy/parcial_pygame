@@ -13,7 +13,6 @@ arial_font = arial_font.render("→", True, (0, 0, 0))
 texto_fabricación = minecraft_font.render("Fabricacion", True, (0, 0, 0)) 
 texto_inventario = minecraft_font.render("Inventario", True, (0, 0, 0)) 
 
-
 mixer.music.load("sonidos/Subwoofer_Lullaby.mp3")
 mixer.music.set_volume(0.2)
 mixer.music.play(-1)
