@@ -15,12 +15,13 @@ pygame.display.set_icon(config.LOGO_MINECRAFT)
 
 
 lista_rectangulos = []
-lista_rectangulos.append(crear_rectangulo([500,500], [150,50], config.GRIS_CLARO))
-lista_rectangulos.append(crear_rectangulo([80, 80], [490, 150], config.GRIS_OSCURO))
-lista_rectangulos.append(crear_rectangulo([50, 50], [300, 150], config.GRIS_OSCURO))
+lista_rectangulos.append(crear_rectangulo([550,500], [170,50], config.GRIS_CLARO))
+lista_rectangulos.append(crear_rectangulo([80, 80], [550, 150], config.GRIS_OSCURO))
+lista_rectangulos.append(crear_rectangulo([60, 60], [210, 160], config.GRIS_OSCURO))
 
-slots_inventario = crear_slots(50, 50, 155, 325, 9, 4, 5, config.GRIS_OSCURO)
-slot_fabricacion = crear_slots(50, 50, 250, 120, 3, 3, 5, config.GRIS_OSCURO)
+slots_inventario = crear_slots(50, 50, 200, 320, 9, 3, 5, config.GRIS_OSCURO)
+slots_acceso_rapido = crear_slots(50, 50, 200, 490, 9, 1, 5, config.GRIS_OSCURO)
+slot_fabricacion = crear_slots(50, 50, 300, 110, 3, 3, 5, config.GRIS_OSCURO)
 
 pantalla = pygame.display.set_mode(config.DIMENSION_PANTALLA)
 while True:
@@ -37,11 +38,15 @@ while True:
 
 
     for i in slots_inventario:
-        pygame.draw.rect(pantalla,i["color"], (i["posicion"], i["superficie"]))
+        pygame.draw.rect(pantalla, i["color"], (i["posicion"], i["superficie"]))
         pygame.draw.rect(pantalla, config.NEGRO, (i["posicion"], i["superficie"]), 2)
     
     for i in slot_fabricacion:
-        pygame.draw.rect(pantalla,i["color"], (i["posicion"], i["superficie"]))
+        pygame.draw.rect(pantalla, i["color"], (i["posicion"], i["superficie"]))
+        pygame.draw.rect(pantalla, config.NEGRO, (i["posicion"], i["superficie"]), 2)
+
+    for i in slots_acceso_rapido:
+        pygame.draw.rect(pantalla, i["color"], (i["posicion"], i["superficie"]))
         pygame.draw.rect(pantalla, config.NEGRO, (i["posicion"], i["superficie"]), 2)
 
     pygame.display.flip() 
