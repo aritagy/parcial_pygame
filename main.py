@@ -7,6 +7,7 @@ pygame.init()
 mixer.init()
 pygame.font.init()
 
+
 minecraft_font = pygame.font.Font("fuentes/Minecraft.ttf", 27)
 arial_font = pygame.font.SysFont("Arial", 55)
 arial_font = arial_font.render("→", True, (0, 0, 0))
