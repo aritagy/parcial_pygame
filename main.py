@@ -33,7 +33,7 @@ slots_acceso_rapido = crear_slots(50, 50, 200, 490, 1, 9, 5, config.GRIS_OSCURO)
 slot_fabricacion = crear_slots(50, 50, 300, 110, 3, 3, 5, config.GRIS_OSCURO)
 
 #Botones
-lista_rectangulos.append(crear_rectangulo([60, 60], [210, 160], config.GRIS_OSCURO))
+boton_recetas = lista_rectangulos.append(crear_rectangulo([60, 60], [210, 160], config.GRIS_OSCURO))
 
 while True:
     for event in pygame.event.get():
